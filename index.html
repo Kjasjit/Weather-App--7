@@ -14,11 +14,11 @@
 <body>
   <div class="container">
     <div class="weather-app-wrapper">
-    <div class="Weather-App">
+    <div class="weather-App">
     <form id="search-form" class="mb-3">
     <div class="row">
        <div class="col-9">
-     <input type="search" aria-placeholder="Type a city...." class="form-control" id="city-input" autocomplete="off" />    </div> 
+     <input type="search" placeholder="Type a city...." class="form-control" id="city-input" autocomplete="off" />
     </div>
     <div class="col-3">
     <input type="submit" value="Search" class="btn btn-success w-100" />   
@@ -34,24 +34,20 @@
 </div>
 <div class="row">
     <div class="col-6">
-        <div class="d-flex weather-temperatur">
-    <img src="" alt="Raining" id="icon"/><strong>15</strong>
+        <div class="d-flex weather-temperature">
+    <img src="" alt="Raining" id="icon"/></div><strong id="temperature"></strong>
      <span class="units">
         <a href="#" id="celsius-link" class="active">˚C</a> |
                     <a href="#" id="fahrenheit-link">˚F</a></span>
         </div>
     </div>
-    </div>
     <div class="col-6">
         <ul>
             <li>
-                Precipitation: 0%
+                Humidity: <span id="humidity"></span>%
             </li>
             <li>
-                Humidity: <span id="humidity"></span>
-            </li>
-            <li>
-                Wind: <span id="wind"></span>
+                Wind: <span id="wind"></span>km/h
             </li>
         </ul>
     </div>
