@@ -21,27 +21,24 @@
      <input type="search" aria-placeholder="Type a city...." class="form-control" id="city-input" autocomplete="off" />    </div> 
     </div>
     <div class="col-3">
-    <input type="submit" value="Search" class="btn btn-primary w-100" />   
+    <input type="submit" value="Search" class="btn btn-success w-100" />   
 </div> 
 </div>
 </form> 
 <div class="overview">
-    <h1 id="city"></h1>
+    <h1> Turin</h1>
     <ul>
-        <li>Last updated at <span id="date"></span></li>
-        <li id="description"></li>
+        <li>Friday 17:37</li>
+        <li>Raining</li>
     </ul>
 </div>
 <div class="row">
     <div class="col-6">
-        <div class="d-flex justify-content-end flex-row-reverse weather-temperature">
-            <div class="float-left">
-                <strong id="temperature"></strong>
-                <span class="units">
-                    <a href="#" id="celsius-link" class="active">˚C</a> |
+        <div class="d-flex weather-temperatur">
+    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png" alt="Raining" id="icon"/> 15° | °F </div>
+     <span class="units">
+        <a href="#" id="celsius-link" class="active">˚C</a> |
                     <a href="#" id="fahrenheit-link">˚F</a></span>
-            </div>
-            <img src="" alt="Clear" id="icon" class="float-left" />
         </div>
     </div>
     <div class="col-6">
@@ -50,30 +47,15 @@
                 Precipitation: 0%
             </li>
             <li>
-                Humidity: <span id="humidity"></span>%
+                Humidity: <span id="humidity"></span>
             </li>
             <li>
-                Wind: <span id="wind"></span>km/h
+                Wind: <span id="wind"></span>
             </li>
         </ul>
     </div>
 </div>
-<div class="weather-forecast" id="forecast">
-    <div class="row">
-        <div class="col-2">
-            <div class="weather-forecast-date">Thu</div>
-            <img src="http://openweathermap.org/img/wn/10n@2x.png" alt="" width="42" />
-            <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max">
-                    11˚ </span>
-                <span class="weather-forecast-temperature-min">
-                    15˚</span>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<small>
+<small> <a href="https://github.com/Kjasjit/Weather-App--7" target="blank">Open-Source Code</a>
 by Kaur Jasjit
 </small>
 </div>
