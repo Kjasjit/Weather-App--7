@@ -1,10 +1,9 @@
 body {
     font-family: sans-serif;
-    background-color:rgb(237, 247, 198);
   }
   
   h1 {
-    color: #085ed6;
+    color: #878787;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
@@ -18,9 +17,8 @@ body {
   
   li {
     list-style: none;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
-    color: #085ed6;
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
@@ -35,7 +33,7 @@ body {
   
   .weather-app {
     padding: 20px;
-    border: 1px solid #085ed6;
+    border: 1px solid #dadde1;
     border-radius: 5px;
   }
   
@@ -52,7 +50,7 @@ body {
   .weather-temperature strong {
     color: rgb(33, 33, 33);
     font-size: 64px;
-    line-height: 64px;
+    line-height: 1;
     font-weight: 400;
   }
   
@@ -69,4 +67,14 @@ body {
   
   .weather-temperature .active:hover {
     text-decoration: none;
+  }
+  .weather-forecast-date{
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  .weather-forecast-temperature-min{
+    opacity: 0.5;
+  }
+  .weather-forecast-temperature-max{
+    font-size: 13px;
   }
