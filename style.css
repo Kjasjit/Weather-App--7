@@ -1,5 +1,9 @@
 body {
     font-family: sans-serif;
+    background-image: url("https://images.theconversation.com/files/18108/original/rffw88nr-1354076846.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: azure;
   }
   
   h1 {
