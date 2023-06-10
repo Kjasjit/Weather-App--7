@@ -1,9 +1,9 @@
 body {
     font-family: sans-serif;
-    background-image: url("https://w0.peakpx.com/wallpaper/433/677/HD-wallpaper-the-blue-water-and-pink-sky.jpg");
+    background-image: url("https://img.freepik.com/premium-vector/clouds-stars-sun-blue-background-childrens-vector-illustration-sky_153074-219.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: azure;
+    
   }
   
   h1 {
@@ -30,6 +30,14 @@ body {
   li:first-letter{
     text-transform: capitalize;
   }
+  .container{
+    max-width: 500px;
+    margin: 60px auto;
+    background: linear-gradient(90.9deg, rgb(255, 187, 187) -8.8%, rgb(255, 220, 177) 12.4%, rgb(255, 249, 177) 35.6%, rgb(220, 255, 177) 59.6%, rgb(177, 218, 255) 84%, rgb(222, 177, 255) 107.9%);
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+  }
   .weather-app-wrapper {
     max-width: 600px;
     margin: 30px auto;
@@ -53,7 +61,7 @@ body {
   
   .weather-temperature strong {
     color: rgb(33, 33, 33);
-    font-size: 64px;
+    font-size: 65px;
     line-height: 1;
     font-weight: 400;
   }
@@ -81,4 +89,7 @@ body {
   }
   .weather-forecast-temperature-max{
     font-size: 13px;
+  }
+  small{
+    text-align: center;
   }
