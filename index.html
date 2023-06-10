@@ -5,74 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-9">
-                <input
-                  type="search"
-                  placeholder="Type a city.."
-                  class="form-control"
-                  id="city-input"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+  <title>🌥️ Weather App</title>
+</head>
+<body>
+  <div class="weather-app">
+    <div class="cities">
+      <div class="row">
+        <div class="col"><a href="#" id="tokyo">Tokyo</a></div>
+        <div class="col"><a href="#" id="new-york">New York</a></div>
+        <div class="col"><a href="#" id="london">London</a></div>
+        <div class="col"><a href="#" id="los-angeles">Los Angeles</a></div>
+        <div class="col"><a href="#" id="paris">Paris</a></div>
+        <div class="col"><a href="#" id="turin">Turin</a></div>
+      </div>
+    </div>
+    <form class="search-form" id="search-form">
+      <div class="row">
+        <div class="col-6">
+          <input
+            type="text"
+            placeholder="Type a city..."
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+            class="form-control enter-city shadow-sm"
+          />
+        </div>
+        <div class="col-3">
+          <input
+            type="submit"
+            value="Search"
+            id="search-input"
+            class="form-control btn btn-primary shadow-sm"
+          />
+        </div>
+        <div class="col-3">
+          <input
+            type="submit"
+            value="Current"
+            id="current-input"
+            class="form-control btn btn-success shadow-sm"
+          />
+        </div>
+      </div>
+    </form>
+      <div class="current-weather" id="current-weather">
+        <div class="row">
+          <div class="col-7">
+            <h1 class="city" id="city"></h1>
+            <span class="date-update">
+              Last updated: <span class="current-date" id="current-date"></span>
+            </span>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />
-                <div class="float-left">
-                  <strong id="temperature"></strong
-                  ><span class="units"> °C</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
-            </div>
+          <div class="col-5" id="current-parameters">
+            <span class="current-icon"><img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              id="current-icon"
+              alt="few-clouds-day"
+            ></img></span>
+            <span class="temperature-now" id="temperature-now"></span>
+            <span class="degree" id="degree">°</span>
+            <span class="fahrenheit" id="fahrenheit">F</span>
+            <h3 class="weather-description" id="weather-description"></h3>
+            <span class="wind-humidity-parameters" id="wind-humidity-parameters">
+              Humidity: <span id="humidity"></span>% Wind: <span id="wind"></span> mph
+            </span>
           </div>
-
-<div class="weather-forecast" id="forecast"></div>
-</div>
-<small> <a href="https://github.com/Kjasjit/Weather-App--7" 
+        </div>
+      </div>
+      <span class="days-forecast" id="days-forecast">Your five day forecast:</span>
+      <div class="full-forecast" id="full-forecast"></div>
+      </div>
+<div class="git-hub" id="git-hub">
+     <a href="https://github.com/Kjasjit/Weather-App--7" 
     target="blank">
     Open-Source Code</a>
     by Kaur Jasjit
-</small>
 </div>
-</div>
-<script src="./src.js"></script>
+<script src="src/app.js"></script>
 </body>
 </html>
