@@ -5,92 +5,136 @@ body {
     background-size: cover;
     
   }
-  h1 {
-    color: #878787;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  
-    color: rgb(135, 135, 135);
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 19px;
-  }
-  
-  li:first-letter {
-    text-transform: capitalize;
-  }
-  
-  .weather-app-wrapper {
-    max-width: 600px;
-    margin: 30px auto;
-  }
-  
-  .weather-app {
-    padding: 20px;
-    border: 1px solid #dadde1;
-    border-radius: 5px;
-  }
-  
-  .overview {
-    margin-bottom: 20px;
-  }
-  
-  .weather-temperature img {
-    margin-right: 5px;
-    height: 64px;
-    width: 64px;
-  }
-  
-  .weather-temperature strong {
-    color: rgb(33, 33, 33);
-    font-size: 64px;
-    line-height: 1;
-    font-weight: 400;
-  }
-  
-  .weather-temperature .units {
-    position: relative;
-    font-size: 16px;
-    top: -34px;
-  }
-  
-  .weather-temperature .active {
-    color: rgb(33, 33, 33);
-    cursor: default;
-  }
-  
-  .weather-temperature .active:hover {
-    text-decoration: none;
-  }
-  
-  .weather-forecast {
-    margin-top: 20px;
-    text-align: center;
-    color: #000;
-  }
-  
-  .weather-forecast-date {
-    font-size: 16px;
-    opacity: 0.5;
-  }
-  
-  .weather-forecast-temperature-min {
-    opacity: 0.5;
-  }
-  
-  .weather-forecast-temperatures {
-    font-size: 13px;
-  }
+  .weather-app,
+#git-hub {
+  display: block;
+}
+#city,
+#temperature-now,
+#weather-description {
+  font-weight: 700;
+}
+.date-update,
+#current-date,
+#degree,
+#fahrenheit,
+#days-forecast,
+#full-forecast,
+#wind-humidity-parameters {
+  font-weight: 500;
+}
+.date-update,
+#current-date,
+#days-forecast,
+#fahrenheit {
+  font-size: 15px;
+}
+#city,
+.date-update {
+  margin: 12px 0 0 18px;
+}
+#current-weather,
+#temperature-now {
+  vertical-align: middle;
+}
+.cities,
+.btn,
+#full-forecast,
+#current-parameters,
+#git-hub {
+  text-align: center;
+}
+.cities,
+.search-form {
+  margin: 0 auto;
+}
+#degree,
+#fahrenheit {
+  float: right;
+}
+.weather-app {
+  font-family: "Rubik", sans-serif;
+  background-color: #e9ebee;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 12px;
+  width: 750px;
+}
+.cities {
+  padding: 0 10px;
+  color: blue;
+  font-size: 15px;
+}
+.search-form {
+  padding: 30px 40px 20px;
+}
+.enter-city {
+  border-radius: 8px;
+}
+.btn-success:focus {
+  border-color: #157347;
+}
+.btn:hover {
+  text-decoration: none;
+}
+#city {
+  font-size: 48px;
+}
+.date-update {
+  padding-left: 2px;
+}
+#current-date {
+  font-weight: 500;
+}
+#current-parameters {
+  margin-top: -8px;
+}
+#current-parameters .active {
+  color: #212529;
+  cursor: default;
+}
+#current-icon {
+  width: 85px;
+  height: 85px;
+  margin-left: 20px;
+}
+#temperature-now {
+  font-size: 48px;
+  margin: 0 0 0 -4px;
+}
+#degree {
+  font-size: 22px;
+  margin: 15px 50px 0 -20px;
+}
+#fahrenheit {
+  margin: 18px 2px 0 0;
+}
+#weather-description {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin: -10px 0 -5px;
+}
+#wind-humidity-parameters {
+  font-size: 12px;
+}
+#current-weather {
+  padding: 0 30px;
+}
+#days-forecast {
+  text-align: left;
+  margin: 10px 0 -18px 20px;
+  padding-left: 30px;
+}
+#full-forecast {
+  margin: 10px 0 0;
+  padding: 0 35px;
+}
+#forecast-icon {
+  font-size: 34px;
+}
+#git-hub {
+  margin: -80px auto;
+}
+a:link {
+  text-decoration: none;
+}
