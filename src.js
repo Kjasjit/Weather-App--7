@@ -55,7 +55,7 @@ function cityInput(event) {
 }
 
 function searchCity(city) {
-  let apiKey = "e36b54b1d58e58429f0670652c731a60";
+  let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
@@ -92,7 +92,7 @@ function showWeather(response) {
 
 // Search with GPS Latitude and Longitude (Allow location search)
 function searchLocation(position) {
-  let apiKey = "e36b54b1d58e58429f0670652c731a60";
+  let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?&lon=${lon}&lat=${lat}&key=${apiKey}&units=imperial`;
@@ -141,7 +141,7 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "e36b54b1d58e58429f0670652c731a60";
+  let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?&lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -200,10 +200,10 @@ function searchParisCity(event) {
 let parisCity = document.querySelector("#paris");
 parisCity.addEventListener("click", searchParisCity);
 //
-// Chicago
+// Turin
 function searchTurinCity(event) {
   event.preventDefault();
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=chicago&key=1bf547ta2a3986bceb80d3bcaob62269&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=turin&key=1bf547ta2a3986bceb80d3bcaob62269&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
 
