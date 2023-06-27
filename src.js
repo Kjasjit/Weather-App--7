@@ -200,13 +200,13 @@ function searchParisCity(event) {
 let parisCity = document.querySelector("#paris");
 parisCity.addEventListener("click", searchParisCity);
 //
-// Turin
-function searchTurinCity(event) {
+// Chicago
+function searchChicagoCity(event) {
   event.preventDefault();
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=turin&key=1bf547ta2a3986bceb80d3bcaob62269&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=chicago&key=1bf547ta2a3986bceb80d3bcaob62269&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
 
-let turinCity = document.querySelector("#turin");
-turinCity.addEventListener("click", searchTurinCity);
+let chicagoCity = document.querySelector("#chicago");
+chicagoCity.addEventListener("click", searchChicagoCity);
 //
