@@ -87,7 +87,7 @@ function showWeather(response) {
     response.data.time * 1000
   );
   getForecast(response.data.coordinates);
-  displayFahrenheitTemperature({ preventDefault: function () {} });
+
 }
 
 // Search with GPS Latitude and Longitude (Allow location search)
@@ -147,7 +147,7 @@ function getForecast(coordinates) {
 }
 
 // Placeholder city upon website launch and reload
-searchCity("Milwaukee");
+searchCity("Turin");
 
 // Top Cities Weather
 // Tokyo
@@ -200,13 +200,12 @@ function searchParisCity(event) {
 let parisCity = document.querySelector("#paris");
 parisCity.addEventListener("click", searchParisCity);
 //
-// Chicago
-function searchChicagoCity(event) {
+// Berlin
+function searchBerlinCity(event) {
   event.preventDefault();
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=chicago&key=1bf547ta2a3986bceb80d3bcaob62269&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?&query=berlin&key=1bf547ta2a3986bceb80d3bcaob62269&units=metric`;
   axios.get(apiUrl).then(showWeather);
 }
 
-let chicagoCity = document.querySelector("#chicago");
-chicagoCity.addEventListener("click", searchChicagoCity);
-//
+let berlinCity = document.querySelector("#berlin");
+berlinCity.addEventListener("click", searchBerlinCity);
